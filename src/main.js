@@ -11,7 +11,7 @@ import Medium from './socials-medium.svg'
 function main() {
 
     const openTwitter = () => {
-        window.open("https://twitter.com/kickcoinarb");
+        window.open("https://twitter.com/NgmiARC");
     }
 
     const tweet = () => {
@@ -25,22 +25,20 @@ function main() {
     <div className='wrap'>
 
         <div className='title'>
-            <h1>TWITCH IS <br/>OUTDATED</h1>
+            <h1>YOU'RE NGMI</h1>
         </div>
 
-        <div className='paragraph'>
-            <p>Join the $KICK industry launching soon on Arbitrum</p>
-        </div>
+ 
 
         <div className='buts'>
-            <button onClick={tweet}>Proof of $KICK</button>
+            <button onClick={tweet}>Proof of $NGMI</button>
             
         </div>
 
         <div className='little-title'>
             <p>NETWORKS SUPPORTED</p>
             <div className='picture'>
-                <img src={Arbitrum}></img>
+                <img src={"https://o.remove.bg/downloads/b12bd520-3af6-4da0-b01d-89cb38fbc7dc/image-removebg-preview.png"}></img>
             </div>
         </div>
 
@@ -48,9 +46,9 @@ function main() {
             <li onClick={openTwitter}>
                 <img src={Twitter}></img>
             </li>
-            <li>
+            {/* <li>
                 <img src={Telegram} onClick={telegram}></img>
-            </li>
+            </li> */}
             {/* <li>
                 <img src={Discord}></img>
             </li> */}
