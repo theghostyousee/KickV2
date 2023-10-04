@@ -15,7 +15,7 @@ function main() {
     }
 
     const tweet = () => {
-        window.open("https://twitter.com/intent/tweet?text=%24KICK%20is%20taking%20the%20W%20%F0%9F%9F%A2%0D%0A%0D%0AMake%20me%20rich%20with%20%40kickcoinarb%0D%0A")
+        window.open("https://twitter.com/intent/tweet?text=I%27m%20confirming%20my%20identity%20for%20%40NGMIArc%0D%0A%0D%0AYou%27re%20%24NGMI%20%F0%9F%92%80&")
     }
     const telegram = () => {
         window.open("https://t.me/KickArb")
