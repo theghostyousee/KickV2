@@ -35,12 +35,12 @@ function main() {
             
         </div>
 
-        <div className='little-title'>
+        {/* <div className='little-title'>
             <p>NETWORKS SUPPORTED</p>
             <div className='picture'>
                 <img src={"https://o.remove.bg/downloads/b12bd520-3af6-4da0-b01d-89cb38fbc7dc/image-removebg-preview.png"}></img>
             </div>
-        </div>
+        </div> */}
 
         <ul className='socials'>
             <li onClick={openTwitter}>
