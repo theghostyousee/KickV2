@@ -18,7 +18,7 @@ function main() {
         window.open("https://twitter.com/intent/tweet?text=I%27m%20confirming%20my%20identity%20for%20%40NgmiARC%0D%0A%0D%0AYou%27re%20%24NGMI%20%F0%9F%92%80&")
     }
     const telegram = () => {
-        window.open("https://t.me/KickArb")
+        window.open("https://t.me/NgmiArc")
     }
 
   return (
@@ -43,12 +43,12 @@ function main() {
         </div> */}
 
         <ul className='socials'>
-            <li onClick={openTwitter}>
+            {/* <li onClick={openTwitter}>
                 <img src={Twitter}></img>
-            </li>
-            {/* <li>
-                <img src={Telegram} onClick={telegram}></img>
             </li> */}
+            <li>
+                <img src={Telegram} onClick={telegram}></img>
+            </li>
             {/* <li>
                 <img src={Discord}></img>
             </li> */}
