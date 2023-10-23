@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=VT323&display=swap');
+
 *,
 ::before,
 ::after {
@@ -7,7 +10,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Plus Jakarta Display";
+  font-family: 'VT323', monospace;
 }
 
 :root {
@@ -20,9 +23,9 @@ body {
   display: flex;
   color: white;
   background-color: black;
-  background-image: url("./media/hacker.jpg");
   align-items: center;
   flex-direction: column;
+  background: url("peacj.webp") no-repeat center center /cover;
   justify-content: center;
   position: relative;
 }
@@ -34,7 +37,7 @@ body:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.923); 
+  background-color: rgba(0, 0, 0, 0.853); 
   z-index: -1;
 }
 
@@ -55,13 +58,12 @@ body:after {
   width: 100%;
   height: 15%;
   display: flex;
-  color: rgba(251, 251, 251, 0.839);
   justify-content: center;
   align-items: center;
 }
 
 .title h1 {
-  font-size: max(calc(54 * var(--res)), 35px);
+  font-size: max(calc(74 * var(--res)), 65px);
 }
 
 .paragraph {
@@ -74,7 +76,7 @@ body:after {
 }
 
 .paragraph p {
-  font-size: max(calc(14 * var(--res)), 15px);
+  font-size: max(calc(24 * var(--res)), 19px);
   color: #9a9fae;
 }
 
@@ -86,19 +88,17 @@ body:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20PX;
 }
 
 .buts button {
-  background: transparent;
-  padding: 22px 50px;
-  border-radius: 30px;
-  color: rgba(251, 251, 251, 0.839);
+  background: linear-gradient(152.2deg,#FF0041, #FF0041, #FF0041);
+  border: 4px solid #481348;
+  padding: 12px 40px;
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
   cursor: pointer;
-  border: none;
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.937);
-  font-size: max(calc(14 * var(--res)), 15px);
+  font-size: max(calc(28 * var(--res)), 30px);
 }
 
 .little-title {
@@ -129,8 +129,8 @@ body:after {
   margin-right: 14px;
 }
 
-.picture img {
-  width: max(calc(40 * var(--res)), 40px);
+picture img {
+  width: max(calc(70 * var(--res)), 200px);
 }
 
 .socials {
@@ -196,14 +196,14 @@ li:nth-child(4) {
     width: 98%;
     z-index: 99;
 
-    height: 20%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .paragraph p {
-    font-size: max(calc(18 * var(--res)), 16px);
+    font-size: max(calc(24 * var(--res)), 18px);
     color: #9a9fae;
   }
 
