@@ -33,7 +33,7 @@ function main() {
         </div>
 
         <div className='buts'>
-            <button onClick={tweet}>Proof of $MARIO</button>
+            <button onClick={tweet}>GET THE AIRDROP</button>
             
         </div>
 
