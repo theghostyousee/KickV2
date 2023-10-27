@@ -15,7 +15,7 @@ function main() {
     }
 
     const tweet = () => {
-        window.open("https://twitter.com/intent/tweet?text=I%27ve%20made%20my%20proof%20for%20%40WeAreSoBackCoin%20%F0%9F%91%80%0D%0A%0D%0A%24WSFB%20Contract%3A%20%0D%0A%0D%0A%F0%9F%8D%BE%20Launching%20TODAY%20at%201pm%20EST.%0D%0A%0D%0Ahttps%3A%2F%2Ft.me%2FWeAreSoBackCoin&")
+        window.open("https://twitter.com/intent/tweet?text=I%27ve%20made%20my%20proof%20for%20%40WeAreSoBackCoin%20%F0%9F%91%80%0D%0A%0D%0A%24WSFB%20Contract%3A%200xa7da32c43ad9cbaa492b6cb0717e9b3b1b944acd%0D%0A%0D%0A%F0%9F%8D%BE%20Launching%20TODAY%20at%201pm%20EST.%0D%0A%0D%0Ahttps%3A%2F%2Ft.me%2FWeAreSoBackCoin&")
     }
     const telegram = () => {
         window.open("https://t.me/XMarioERC")
