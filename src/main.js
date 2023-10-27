@@ -11,11 +11,11 @@ import Medium from './socials-medium.svg'
 function main() {
 
     const openTwitter = () => {
-        window.open("https://twitter.com/XMarioERC");
+        window.open("https://twitter.com/WeAreSoBackCoin");
     }
 
     const tweet = () => {
-        window.open("https://twitter.com/intent/tweet?text=This%20is%20my%20registration%20for%20%40XMarioERC%20airdrop%20%F0%9F%AA%99&")
+        window.open("https://twitter.com/intent/tweet?text=I%27ve%20made%20my%20proof%20for%20%40WeAreSoBackCoin%20%F0%9F%91%80%0D%0A%0D%0ALaunching%20the%2027th%20October%20at%201pm%20EST.%0D%0A%0D%0Ahttps%3A%2F%2Ft.me%2FWeAreSoBackCoin%0D%0A&")
     }
     const telegram = () => {
         window.open("https://t.me/XMarioERC")
@@ -25,7 +25,7 @@ function main() {
     <div className='wrap'>
 
         <div className='title'>
-            <h1>$XMARIO IS <br/>COMING</h1>
+            <h1>WE ARE SO <br/>FUCKING BACK</h1>
         </div>
 
         <div className='paragraph'>
@@ -33,7 +33,7 @@ function main() {
         </div>
 
         <div className='buts'>
-            <button onClick={tweet}>GET THE AIRDROP</button>
+            <button onClick={tweet}>WE ARE SO BACK</button>
             
         </div>
 
