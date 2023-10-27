@@ -29,7 +29,7 @@ function main() {
         </div>
 
         <div className='paragraph'>
-            <p>Only Contract: </p>
+            <p>Only Contract: 0xa7da32c43ad9cbaa492b6cb0717e9b3b1b944acd</p>
         </div>
 
         <div className='buts'>
