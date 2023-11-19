@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
 *,
 ::before,
 ::after {
@@ -7,7 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Plus Jakarta Display";
 }
 
 :root {
@@ -20,14 +20,9 @@ body {
   display: flex;
   color: white;
   background-color: black;
-  background-image: url("now.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
   align-items: center;
   flex-direction: column;
+  background: url("https://cdn.discordapp.com/attachments/1089216327572533401/1175835692731994233/fire-forest-flames-generative-ai_169016-29510.png?ex=656cad53&is=655a3853&hm=fdad8ad514af228ab5023359d6b4185af710a8626ef72eb2b97b1694741f098a&") no-repeat center center /cover;
   justify-content: center;
   position: relative;
 }
@@ -39,7 +34,7 @@ body:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.867); 
+  background-color: rgba(0, 0, 0, 0.92); 
   z-index: -1;
 }
 
@@ -58,27 +53,27 @@ body:after {
 .title {
   display: flex;
   width: 100%;
-  height: 15%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .title h1 {
-  font-size: max(calc(74 * var(--res)), 45px);
+  font-size: max(calc(54 * var(--res)), 35px);
 }
 
 .paragraph {
   display: flex;
   width: 100%;
-  height: 15%;
+  height: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .paragraph p {
-  font-size: max(calc(22 * var(--res)), 14px);
+  font-size: max(calc(14 * var(--res)), 15px);
   color: #9a9fae;
 }
 
@@ -93,36 +88,15 @@ body:after {
 }
 
 .buts button {
-  /* background: linear-gradient(152.2deg,#7BC5BC, #65a9a1, #568c86); */
-
-  background-color: #86c4c9;  
-  padding: 15px 30px; 
-  border: 4px solid #481348;
-  text-transform: uppercase; 
-  font-weight: bold; 
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Slight shadow */
-
-  border: none;
-  /* padding: 12px 40px; */
-  border-radius: 2px;
-  color: rgb(0, 0, 0);
+  background: linear-gradient(152.2deg,#ce2815, #ce2815, #ce2815);
+  padding: 12px 40px;
+  border-radius: 12px;
+  color: rgb(21, 0, 0);
   cursor: pointer;
+  border: none;
   font-weight: 500;
-  font-size: max(calc(28 * var(--res)), 20px);
-
-
-  border-top: 5px solid #bfe0e3; 
-  border-left: 5px solid #89b7bb;
-  border-bottom: 5px solid #5f9295; 
-  border-right: 5px solid #66a1a5; 
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: max(calc(17 * var(--res)), 15px);
 }
-
-button:hover {
-  background-color: #a8dadc;
-}
-
-
 
 .little-title {
   display: flex;
@@ -213,21 +187,20 @@ li:nth-child(4) {
     width: 100%;
     z-index: 99;
   }
-
+  
   .paragraph {
     display: flex;
     width: 98%;
     z-index: 99;
 
-    height: 10%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .paragraph p {
-    font-size: max(calc(24 * var(--res)), 18px);
+    font-size: max(calc(18 * var(--res)), 16px);
     color: #9a9fae;
   }
-
 }
