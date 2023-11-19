@@ -49,8 +49,8 @@ function main() {
             <li onClick={openTwitter}>
                 <img src={Twitter}></img>
             </li>
-            <li>
-                <img src={Telegram} onClick={telegram}></img>
+            <li onClick={telegram}>
+                <img src={Telegram} ></img>
             </li>
             {/* <li>
                 <img src={Discord}></img>
