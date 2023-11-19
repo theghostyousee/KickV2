@@ -46,9 +46,9 @@ function main() {
         </div>
 
         <ul className='socials'>
-            <li onClick={openTwitter}>
+            {/* <li onClick={openTwitter}>
                 <img src={Twitter}></img>
-            </li>
+            </li> */}
             <li onClick={telegram}>
                 <img src={Telegram} ></img>
             </li>
