@@ -50,6 +50,7 @@ body:after {
 
 }
 
+
 .title {
   display: flex;
   width: 100%;
@@ -60,7 +61,7 @@ body:after {
 }
 
 .title h1 {
-  font-size: max(calc(54 * var(--res)), 35px);
+  font-size: max(calc(44 * var(--res)), 35px);
 }
 
 .paragraph {
@@ -79,10 +80,11 @@ body:after {
 
 .buts {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   height: 5%;
   display: flex;
+  gap: 4vmin;
   justify-content: center;
   align-items: center;
 }
@@ -95,8 +97,10 @@ body:after {
   cursor: pointer;
   border: none;
   font-weight: 500;
-  font-size: max(calc(23 * var(--res)), 15px);
+  font-size: max(calc(20 * var(--res)), 15px);
 }
+
+
 
 .little-title {
   display: flex;
@@ -126,8 +130,29 @@ body:after {
   margin-right: 14px;
 }
 
-picture img {
-  width: max(calc(70 * var(--res)), 200px);
+.picture img {
+  width: max(calc(70 * var(--res)), 140px);
+}
+
+@media screen and (max-height: 700px) {
+  .buts button {
+    background: linear-gradient(152.2deg,#ce2815, #ce2815, #ce2815);
+    padding: 22px 40px;
+    border-radius: 12px;
+    color: rgb(21, 0, 0);
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: max(calc(23 * var(--res)), 15px);
+  }
+
+  .picture {
+    display: flex;
+    margin-right: 14px;
+    background-color: red;
+  }
+  
+
 }
 
 .socials {
@@ -155,14 +180,11 @@ li img {
   width: max(calc(10 * var(--res)), 20px);
 }
 
-li:nth-child(1),li:nth-child(2)  {
+li  {
   cursor: pointer;
 }
 
-li:nth-child(3),
-li:nth-child(4) {
-  cursor: not-allowed;
-}
+
 
 @media screen and (max-width: 450px) {
   body {

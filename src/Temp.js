@@ -3,7 +3,7 @@ import './main.css'
 import Arbitrum from './arb.svg'
 import Twitter from './socials-twitter.svg'
 import Telegram from './socials-telegram.svg'
-import Discord from './socials-discord.svg'
+import Discord from './dext.png'
 import ETH from './eths.png'
 import Burn from './n.png'
 import axios from 'axios';
@@ -22,6 +22,10 @@ function Temp() {
     }
     const telegram = () => {
         window.open("https://t.me/ReBurnEth")
+    }
+
+    const dextools = () => {
+        window.open("https://www.dextools.io/app/en/ether/pair-explorer/")
     }
 
     const [ethBalance, setEthBalance] = useState('Loading...');
@@ -51,7 +55,7 @@ function Temp() {
 
   return (
     <div className='wrap'>
-
+        
         <div className='title'>
             <h1>BUYBACK WALLET</h1>
         </div>
@@ -62,7 +66,7 @@ function Temp() {
 
         <div className='buts'>
             <button onClick={tweet}> {ethBalance} ETH</button>
-            
+            <button onClick={tweet}> NAN $BURN</button>
         </div>
 
         <div className='little-title'>
@@ -73,15 +77,15 @@ function Temp() {
         </div>
 
         <ul className='socials'>
-            {/* <li onClick={openTwitter}>
+            <li onClick={openTwitter}>
                 <img src={Twitter}></img>
-            </li> */}
+            </li>
             <li onClick={telegram}>
                 <img src={Telegram} ></img>
             </li>
-            {/* <li>
+            <li onClick={dextools}>
                 <img src={Discord}></img>
-            </li> */}
+            </li>
         </ul>
     </div>
   )
