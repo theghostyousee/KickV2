@@ -58,7 +58,7 @@ function Temp() {
         
         <div className='title'>
             <h1>BUYBACK WALLET</h1>
-            <p>contract: 0x0E801e4b5A1b54126D54f2DD95a009Bd84bbcDa7</p>
+            <p>contract: 0xB4A5CD27B1364f01be93819Cdd9Ea2ffA529A61C</p>
         </div>
 
         <div className='paragraph'>
