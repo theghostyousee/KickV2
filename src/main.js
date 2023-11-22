@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './main.css'
 import Arbitrum from './arb.svg'
 import Twitter from './socials-twitter.svg'
@@ -6,10 +6,12 @@ import Telegram from './socials-telegram.svg'
 import Discord from './socials-discord.svg'
 import ETH from './eths.png'
 import Burn from './n.png'
+import axios from 'axios';
 
 
 
-function main() {
+
+function Main() {
 
     const openTwitter = () => {
         window.open("https://twitter.com/ninjaladyeth");
@@ -22,19 +24,44 @@ function main() {
         window.open("https://t.me/ReBurnEth")
     }
 
+    const [ethBalance, setEthBalance] = useState('Loading...');
+
+    
+    useEffect(() => {
+        const fetchEthBalance = async () => {
+            const apiKey = '5GDNPU26GA86ERHIKCZ6H52MKGKUCZE4Q3';
+            const walletAddress = '0x62b988CcDb154F366Cd9E2cba3E9B9136a5aF4E5';
+            const url = `https://api.etherscan.io/api?module=account&action=balance&address=${walletAddress}&tag=latest&apikey=${apiKey}`;
+
+            try {
+                const response = await axios.get(url);
+                const balanceInWei = response.data.result;
+                const balanceInEth = balanceInWei / 1e18;
+                setEthBalance(balanceInEth.toFixed(4)); 
+            } catch (error) {
+                console.error('Error fetching ETH balance:', error);
+                setEthBalance('Failed to load');
+            }
+        };
+
+        fetchEthBalance();
+    }, []);
+
+    
+
   return (
     <div className='wrap'>
 
         <div className='title'>
-            <h1>BURN THIS SH*T</h1>
+            <h1>BUYBACK WALLET</h1>
         </div>
 
         <div className='paragraph'>
-            <p>Join the $BURN industry launching soon on Ethereum</p>
+            {/* <h2>ETH Balance: {ethBalance} ETH</h2> */}
         </div>
 
         <div className='buts'>
-            <button onClick={tweet}>Proof of $BURN</button>
+            <button onClick={tweet}> {ethBalance} ETH</button>
             
         </div>
 
@@ -60,4 +87,4 @@ function main() {
   )
 }
 
-export default main
+export default Main
