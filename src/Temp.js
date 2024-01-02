@@ -17,10 +17,10 @@ function main() {
     }
 
     const tweet = () => {
-        window.open("https://twitter.com/intent/tweet?text=%24KICK%20is%20taking%20the%20W%20%F0%9F%9F%A2%0D%0A%0D%0AMake%20me%20rich%20with%20%40kickcoinarb%0D%0A")
+        window.open("https://twitter.com/intent/tweet?text=Are%20you%20retarded%3F%0D%0A%0D%0AMake%20me%20rich%20with%20%40CycleSolana&")
     }
     const telegram = () => {
-        window.open("https://t.me/KickArb")
+        window.open("https://t.me/SuperCycleSolana")
     }
 
   return (
