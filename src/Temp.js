@@ -35,7 +35,7 @@ function main() {
         </div>
 
         <div className='buts'>
-            <button onClick={tweet}>Proof of $KICK</button>
+            <button onClick={tweet}>Proof of $CYCLE</button>
 
         </div>
 
