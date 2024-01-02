@@ -22,7 +22,7 @@ body {
   background-color: black;
   align-items: center;
   flex-direction: column;
-  background: url("f.jpg") no-repeat center center /cover;
+  background: url("FIREBG.gif") no-repeat center center /cover;
   justify-content: center;
   position: relative;
 }
@@ -34,7 +34,7 @@ body:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.763); 
+  background-color: rgba(0, 0, 0, 0.826); 
   z-index: -1;
 }
 
@@ -50,8 +50,22 @@ body:after {
 
 }
 
-
 .title {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: max(calc(54 * var(--res)), 35px);
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.paragraph {
   display: flex;
   width: 100%;
   height: 10%;
@@ -60,47 +74,48 @@ body:after {
   align-items: center;
 }
 
-.title h1 {
-  font-size: max(calc(44 * var(--res)), 35px);
-}
-
-.paragraph {
-  display: flex;
-  width: 100%;
-  height: 6%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .paragraph p {
   font-size: max(calc(14 * var(--res)), 15px);
   color: #9a9fae;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .buts {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: 5%;
   display: flex;
-  gap: 4vmin;
   justify-content: center;
   align-items: center;
 }
 
 .buts button {
-  background: linear-gradient(152.2deg,#ce2815, #ce2815, #ce2815);
-  padding: 32px 40px;
+  /* background: linear-gradient(152.2deg,#2c6812, #30810e, #2d8209);
+  padding: 12px 40px;
   border-radius: 12px;
-  color: rgb(21, 0, 0);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   border: none;
   font-weight: 500;
-  font-size: max(calc(20 * var(--res)), 15px);
+  font-size: max(calc(14 * var(--res)), 15px); */
+
+  background-image: url(./BTNBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  background-position: center;
+  width: 220px;
+  height: 103px;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
 }
-
-
 
 .little-title {
   display: flex;
@@ -119,10 +134,11 @@ body:after {
 }
 
 .little-title img {
-  width: 212px;
+  width: 112px;
   aspect-ratio: auto 272 / 80;
   overflow-clip-margin: content-box;
   overflow: clip;
+  cursor: pointer;
 }
 
 .picture {
@@ -130,29 +146,8 @@ body:after {
   margin-right: 14px;
 }
 
-.picture img {
-  width: max(calc(70 * var(--res)), 140px);
-}
-
-@media screen and (max-height: 700px) {
-  .buts button {
-    background: linear-gradient(152.2deg,#ce2815, #ce2815, #ce2815);
-    padding: 22px 40px;
-    border-radius: 12px;
-    color: rgb(21, 0, 0);
-    cursor: pointer;
-    border: none;
-    font-weight: 500;
-    font-size: max(calc(23 * var(--res)), 15px);
-  }
-
-  .picture {
-    display: flex;
-    margin-right: 14px;
-    background-color: red;
-  }
-  
-
+picture img {
+  width: max(calc(50 * var(--res)), 100px);
 }
 
 .socials {
@@ -180,18 +175,21 @@ li img {
   width: max(calc(10 * var(--res)), 20px);
 }
 
-li  {
+li:nth-child(1),li:nth-child(2)  {
   cursor: pointer;
 }
 
-
+li:nth-child(3),
+li:nth-child(4) {
+  cursor: not-allowed;
+}
 
 @media screen and (max-width: 450px) {
   body {
     height: 100vh;
     width: 100vw;
     display: flex;
-   
+
     align-items: center;
     flex-direction: column;
     background-repeat: no-repeat;
@@ -209,10 +207,10 @@ li  {
     width: 100%;
     z-index: 99;
   }
-  
+
   .paragraph {
     display: flex;
-    width: 98%;
+    width: 95%;
     z-index: 99;
 
     height: 20%;
@@ -225,4 +223,14 @@ li  {
     font-size: max(calc(18 * var(--res)), 16px);
     color: #9a9fae;
   }
+
+  .little-title img {
+    width: 52px;
+    aspect-ratio: auto 272 / 80;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    cursor: pointer;
+  }
+  
+
 }
